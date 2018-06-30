@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Informações</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-searchbar
+    [(ngModel)]="myInput"
+    [showCancelButton]="shouldShowCancel">
+  </ion-searchbar>
+  
+  <ion-card *ngFor="let vacine of vacines">
+    <ion-card-header (click)="detalhes(vacine.text)">
+      <b>{{vacine.title}}</b>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

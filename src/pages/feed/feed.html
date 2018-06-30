@@ -1,0 +1,66 @@
+<!--
+  Generated template for the FeedPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Cadernetas Cadastradas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card *ngFor="let pessoa of usuarios">
+    <ion-item>
+      <ion-avatar item-start>
+        <img [src]="pessoa.foto">
+      </ion-avatar>
+
+      <h2>{{pessoa.nome}}</h2>
+      
+      <p>{{pessoa.nascimento}}</p>
+    </ion-item>
+
+    <ion-row>
+      <ion-col col-5>
+        <button ion-button icon-left clear small (click)="calendarVacine()">
+          <ion-icon ios="ios-calendar" md="ios-calendar-outline"></ion-icon>
+          
+          <p>Calendário</p>
+        </button>
+      </ion-col>
+
+      <ion-col col-7>
+        <button ion-button icon-left clear small (click)="addVacine()">
+          <ion-icon ios="ios-add-circle" md="ios-add-circle-outline"></ion-icon>
+          
+          <p>Adicionar Vacina</p>
+        </button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-6>
+        <button ion-button icon-left clear small (click)="alert()">
+          <ion-icon ios="ios-alarm" md="ios-alarm-outline"></ion-icon>
+          
+          <p>Alerta</p>
+        </button>
+      </ion-col>
+
+      <ion-col col-6>
+        <button ion-button icon-left clear small (click)="removeUser(pessoa.nome)">
+          <ion-icon ios="ios-trash" md="ios-trash-outline"></ion-icon>
+          
+          <p>Excluir</p>
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <button ion-button block>Novo Cadastro</button>
+</ion-content>
