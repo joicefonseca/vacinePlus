@@ -22,4 +22,7 @@ export class ContactPage {
     console.log('ionViewDidLoad ContactPage');
   }
 
+  sair(){
+    this.navCtrl.setRoot("LoginPage")
+  }
 }

@@ -19,15 +19,12 @@ export class MapaPage {
   public marker: any;
   public locations = [
     ['Minha Posição', 0, 0],
-    ['PetZoo', -18.582561, -46.518970],
-    ['PetMania', -18.585497, -46.511188],
-    ['PetZooFilial', -18.586545, -46.510272],
-    ['Boi&Cão', -18.587046, -46.511315],
-    ['Boi&Cão&Gato', -18.590901, -46.517939],
-    ['KãoKiLate', -18.593784, -46.517396],
-    ['Zoomed', -18.594306, -46.517335],
-    ['Clinicão', -18.601406, -46.516054],
-    ['FormulaAnimal', -18.590788, -46.519742]
+    ['UPA III', -18.608374, -46.508278],
+    ['HNSF', -18.586926, -46.512631],
+    ['Vera Cruz', -18.600201, -46.516242],
+    ['Unidade de Saúde Lagoa Grande',-18.602469, -46.515523],
+    ['Unidade de Saúde Jardim Panorâmico', 18.598361, -46.493904],
+    ['Unidade de Saúde Sebastião Amorim',-18.592416, -46.502118],
   ];
   constructor(
     public navCtrl: NavController,
