@@ -17,7 +17,12 @@ import { ModalInfoComponent } from '../../components/modal-info/modal-info';
 export class InfoPage {
 
   public vacines = [
-    { title: 'Vacinas obrigatórias CRIANÇAS', text: 'BCG: dose única ao nascer. Proteje contra tuberculose. Hepatite B: isolada de outras imunizações. Outras doses irão vir em doses posteriores. 2 meses: Pentavalente: proteção contra difteria, tétano, coqueluche, hepatite B e a Haemophilus influenzae B, bactéria relacionada à pneumonia, meningite, infecções de nariz, garganta e outras partes do corpo. 3 doses dadas aos 2, 4 e 6 meses de idade e 2 reforços dados aos 15 meses e aos 4 anos. Poliomielite VIP/VOP: VIP é dada por injeção aos 2, 4 e 6 meses. O reforço é feito com a VOP aos 15 meses e aos 4 anos.  Pneumocócica: Duas doses aos 2 e 4 meses e um reforço aos 12 meses. A vacina previne doenças causadas por 10 tipos diferentes de pneumococo, como pneumonia, meningite e otite. Rotavírus: Protecão contra a rotavirose(pode causar diarreia forte) e é oferecida em duas doses (aos 2 e 4 meses).'}
+    { title: 'BCG', text:'Dose única ao nascer. Proteje contra tuberculose.'},
+    { title: 'Hepatite B', text: 'Isolada de outras imunizações. Outras doses irão vir em doses posteriores.'},
+    { title: 'Pentavalente', text: 'Proteção contra difteria, tétano, coqueluche, hepatite B e a Haemophilusinfluenzae B, bactéria relacionada à pneumonia, meningite, infecções de nariz, garganta e outras partes do corpo. 3 doses dadas aos 2, 4 e 6 meses de idade e 2 reforços dados aos 15 meses e    aos 4 anos.'},
+    { title: 'Pneumocócica', text: 'Duas doses aos 2 e 4 meses e um reforço aos 12 meses. A vacina previne doenças causadas por 10 tipos diferentes de pneumococo, como pneumonia, meningite e otite.'},
+    { title: 'Rotavírus', text:'Protecão contra a rotavirose(pode causar diarreia forte) e é oferecida em duas doses(aos 2 e 4 meses).'},
+    { title: 'Meningocócica C', text:'Proteção contra meningite e é dada em duas doses (aos 3 e 5 meses) e reforço aos 12 meses.'},
   ]
 
   public defaultSearch: string = 'test';
@@ -45,8 +50,6 @@ export class InfoPage {
 
     modal.present();
   }
-
-  
   onClearSearchbar(ev: any) {
     console.log('ionClear', ev);
   }
